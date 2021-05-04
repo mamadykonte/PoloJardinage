@@ -1,0 +1,168 @@
+/* ******************************************************* */
+/* ************** Les éléments du caroussel ************** */
+/* ******************************************************* */
+
+.slider{
+    margin-bottom: 3rem;
+}
+/* Boite à outils */
+.project-toolbar {
+    margin : 1rem;
+    text-align: center;
+    font-size : 1.5rem;
+}
+button{
+   border: none;
+}
+  
+  /*
+  *  Embarquer figure et .slider-navigation
+  *  dans un élément en position relative : .slider-layout
+  *    -> les éléments enfants seront en position absolute afin d'apparaître sur la photo :
+  *
+  *       1 - liens précédent et suivant (.next,.prev)
+  *       2 - figcaption (.slider-legend )
+  *
+  *    -> la hauteur de .slider-layout sera donc celle des photos
+  */
+  button{
+    background-color: white;
+  }
+  #play-pause{
+      color: teal;
+      font-size: 3rem;
+    
+  }
+  .fa-play{
+      color: teal;
+      font-size: 3rem;
+     
+  }
+  .fa-random{
+    color: teal;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+  
+  .slider-layout {
+    position : relative;
+  }
+  
+  .slider-figure {
+    display : none;
+    margin : 0 10%;
+    padding : 1rem;
+    border-radius : 1rem;
+    will-change: transform;
+  }
+  
+  .slider-figure.active {
+    display : block;
+  }
+  
+  .slider-picture {
+    width: 100%;
+  }
+  
+  .slider-legend {
+    position : absolute;
+    left : 1rem; right :1rem; top : 1rem;
+    padding : 1rem;
+    border-radius : 1rem 1rem 0 0;
+    background : rgba(255, 255, 255, 0.5);
+    font-size : 1.6rem;
+    font-weight : bold;
+    text-align: center;
+  }
+  
+  .next, .prev {
+    position : absolute;
+    top : 50%;
+    transform : translateY(-50%);
+    font-size : 3em;
+    color : white;
+  }
+  
+  .next:hover,
+  .prev:hover {
+    background-color : rgba(255,255,255,0.5);
+    color : white;
+    text-decoration: none;
+  }
+  
+  .prev {
+    left : 15%;
+    color: teal;
+  }
+  
+  .next {
+    right : 15%;
+    color: teal;
+  }
+  
+  /**
+   * Bonus 1 - Puces
+   */
+  .slider-dots {
+    position : absolute;
+    z-index : 200;
+    bottom : 1rem; left : 0; right : 0;
+    margin : 0;
+    padding : 0;
+    list-style : none;
+    text-align : center;
+  }
+  
+  .slider-dots li {
+    display : inline-block;
+    width : 20px;
+    height : 20px;
+    margin : 0.5rem;
+    padding : 0;
+    background-color : white;
+    border : 2px solid  white;
+    box-shadow : 5px 5px 10px rgba(0,0,0,0.8);
+    border-radius : 50%;
+    cursor : pointer;
+  }
+  
+  
+  .slider-dots li:hover {
+    background-color : white;
+    border-color : teal;
+  }
+  
+  .slider-dots li.selected {
+    background-color : teal;
+  }
+
+ 
+    .slider-layout {
+      position: relative;
+      display: flex;
+      margin: 0;
+      transform: perspective(25px);
+  }
+  .slider-figure.active { 
+    opacity: 1;
+    position: absolute;
+    left: 25%;
+    z-index: 1;
+    width: 35%;
+    transition: 4s opacity;
+  }
+  .slider-figure { 
+    display: inline-block;
+    text-align: left;
+    will-change: transform;
+    opacity: 0.5;
+    padding: 0;
+    box-shadow: none;
+    background: none;
+    width: 40%;
+  }
+  .slider-legend {
+    display: none;
+  }
+  
+

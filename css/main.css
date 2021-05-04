@@ -1,0 +1,607 @@
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX GOBLA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX GOBLA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+  font-family: 'Play', sans-serif;
+  color: #524F4F;
+}
+
+p{
+  font-size: 2rem;
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX HEADER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX HEADER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+header h1{
+  font-family: 'Pacifico', cursive;
+}
+header{
+  position: relative;
+  
+}
+.lien {
+  text-decoration:none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #707070;
+  margin: 5% 32% 4% 7%;
+  align-items: center;
+  width: 60%;
+}
+
+.logo img{
+  width: 200px;
+  vertical-align: middle;
+}
+/**************************************** menu ********************************************/
+/**************************************** menu ********************************************/
+/* Important styles */
+
+#toggle {
+  display: block;
+  float: right;
+  width: 28px;
+  margin: 5% 5% 0 auto;
+  position: absolute;
+    top: 1%;
+    right: 2%;
+}
+
+#toggle span:after,
+#toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+/* on activation */
+#toggle.on span {
+  background-color: transparent;
+}
+#toggle.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#toggle.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+#toggle.on + .lien {
+  opacity: 1;
+  display: block;
+}
+
+/* menu appearance*/
+.lien {
+  position: relative;
+  color: #999;
+  width: 70%;
+  padding: 2rem;
+  margin: 9% auto;
+  text-align: center;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.1);
+  display: none;
+  opacity: 0;
+  transition: opacity .4s;
+  
+}
+
+ 
+.lien a {
+  font-size: 2.5rem;
+  display: block;
+  padding: 5px;
+  color: #888;
+  text-decoration: none;
+  transition: all .2s;
+
+}
+
+.lien a:hover,
+.lien a:focus {
+  background: #44A781;
+  color: #0D342C;
+}
+/**************************************** menu ********************************************/
+/**************************************** menu ********************************************/
+.banniere{
+  background: no-repeat right  bottom/30% url(../img/white-leaves.svg),
+  url(../img/mobile/garden\ 2.png)no-repeat fixed center/cover;
+  position: relative;
+  margin: 0;
+  padding: 5% 0 1% 0;
+ 
+}
+.banniere h1 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  
+  
+}
+.banniere p{
+  width: 80%;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.678);
+} 
+
+.banniere p+a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 2px solid #FFFFFF;
+  border-radius: 47px;
+  width: 20rem;
+  margin: 5% auto;
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  border-width: 0px 0px 4px;
+}
+
+.banniere p+a:hover{
+  background-color: rgba(255, 255, 255, 0.219);
+  
+}
+
+.banniere a:last-child {
+  color: #FFFFFF;
+  position: relative;
+  left: 50%;
+  bottom: 1rem;
+  font-size: 2.5rem;
+}
+  
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX MAIN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX MAIN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+main h2{
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  margin: 2rem;
+}
+
+.societe, .service, .realisation, .contacter {
+  padding: 4% 4%;
+}
+.societe{
+  background: url("../img/main_terre.png") no-repeat bottom center;
+  margin: 15% 0;
+
+}
+.societe h2{
+  background: url(../img/leaf.svg) no-repeat 15.5% /4% ;
+}
+main p {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#round {
+  position: relative;
+  bottom: 10rem;
+  margin-left: 45%;
+  opacity: 0.6;
+  height: 200px;
+  shape-outside: circle();
+  clip-path: circle();
+  background: transparent linear-gradient(180deg, #0AD8AF 0%, #0B3129 100%) 0% 0% no-repeat padding-box;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.service {
+  background: no-repeat right  bottom/30% url(../img/white-leaves.svg),
+  url(../img/mobile/pelle_terre.png) no-repeat center/cover fixed;
+  color: white;
+}
+.service h2{
+  background: url(../img/leaf_white.svg) no-repeat 18% /4%;
+}
+
+.service p:last-child{
+  width: 136px;
+  line-height: 5rem;
+  font-size: 3rem;
+  margin-top: 4rem;
+}
+.realisation h2{
+  background: url(../img/leaf.svg) no-repeat 22% /4%;
+}
+
+.contacter{
+  background: url(../img/mobile/garden_door.png) no-repeat center/cover fixed;
+  color: white;
+}
+.contacter h2{
+  background: url(../img/leaf.svg) no-repeat  22% /4%;
+}
+
+.contacter form{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0rem auto;
+  font-size: 1.5rem;
+}
+.contacter input {
+  color: teal;
+  padding: 6%;
+  margin: 5% 0;
+  border-radius: 66px;
+}
+.contacter textarea{
+  border-radius: 34px;
+  color: teal;
+  height: 261px;
+  margin: 5% 0;
+  padding: 12%;
+}
+
+.contacter input::placeholder{
+  color:teal;
+  padding-left:2rem;
+}
+textarea::placeholder{
+  color:teal;
+  padding:10% 0;
+  text-align: center;
+}
+input[type="submit"]{
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FOOTER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FOOTER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+footer{
+   
+  background: no-repeat right bottom/30%  url("../img/white-leaves.svg"),
+  transparent linear-gradient(180deg, #44A781 0%, #0D342C 100%) 0% 0% no-repeat padding-box;
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10% 0;
+}
+
+footer > a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin:0 22%;
+  text-align: center;
+}
+footer > a h1 {
+  font-size: 3rem;
+  color: white;
+  line-height: 0rem;
+  
+}
+
+footer > a img {
+  width: 30%;
+  margin:0 auto;
+  color: #FFFFFF;
+}
+footer address{
+  width: 80%;
+  margin: 10% auto;
+}
+footer address p{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 3rem;
+}
+footer address p:last-child{
+  margin-top:18%;
+}
+footer address p:last-child a{
+  margin-left:6%;
+  color: white;
+  text-decoration: none;
+}
+footer nav{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer nav a{
+  text-decoration: none;
+  font-size: 4rem;
+  color: white;
+  
+}
+footer nav + a:last-child {
+  color: #FFFFFF;
+  display: block;
+  margin: 10% 50% 0 50%;
+  font-size: 2.5rem;
+}
+
+
+
+
+
+
+/*media*/
+@media screen and (min-width:0px)and (max-width:900px){
+  
+  
+}
+
+@media screen and (max-width: 640px){
+  
+  main h2{
+    background: url(../img/leaf.svg) no-repeat 50% bottom /11% !important;
+    padding-bottom: 12%;
+  }
+}
+@media screen and (min-width: 641px){
+  header > a{
+    width: 30%;
+  }
+  .fixed{
+    position: fixed;
+  }
+  .menu{
+    width: 100%;
+  }
+
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 800px){
+  
+  .societe h2 {
+    background: url(../img/leaf.svg) no-repeat  64% /4%;
+  }
+  .service h2 {
+    background: url(../img/leaf.svg) no-repeat  66% /4%;
+  }
+  .realisation h2 {
+    background: url(../img/leaf.svg) no-repeat  69% /4%;
+  }
+  .contacter h2 {
+    background: url(../img/leaf.svg) no-repeat  69% /4%;
+  }
+
+}
+
+
+
+
+/*MEDIA*/ 
+@media screen and (min-width: 1024px){
+  header > a{
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+  }
+  header > a img {
+    width: 30%;
+    margin: 0 25%;
+}
+.lien{
+  display: inline-block;
+    margin: 0;
+    width: 50%;
+   opacity: 1;
+   box-shadow: none;
+   background: none;
+
+}
+.banniere{
+  background: no-repeat right  bottom/30% url(../img/white-leaves.svg),
+  url(../img/garden2.png)no-repeat fixed center/cover;
+  position: relative;
+   margin: 0;
+ 
+}
+
+.banniere a:last-child {
+  font-size: 4.5rem;
+}
+  #toggle{
+    display: none;
+    visibility: visible;
+  }
+  .menu {
+    display: block;
+    margin: 0;
+    opacity: 1;
+    width: 100%;
+    box-shadow: none;
+    background: none;
+    z-index: 1;
+    padding: 0 2%;
+  }
+
+  .menu a{
+  display: inline-block;
+  }
+  .logo{
+    margin: 0 30% 0 0;
+  }
+  main h2{
+    text-align: left;
+  }
+  main p{
+    margin: 6% 0;
+    width: 50%;
+    text-align: left;
+  }
+  .societe,.service,.realisation,.contacter{
+    padding: 4% 4%;
+  }
+ 
+.societe {
+    position: relative;
+    background: url(../img/main_terre.png) no-repeat right center;
+    background-size: 30%;
+    margin: 0;
+}
+.service{
+  position: relative;
+  background: no-repeat right  bottom/30% url(../img/white-leaves.svg),
+  url(../img/garden\ 2-1.png) no-repeat center/cover fixed;
+  color: white;
+}
+.service p:last-child {
+  position: absolute;
+  top: 40%;
+  right: 25%;
+  margin: 0;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+
+#round{
+  position: absolute;
+  top: 20rem;
+  opacity: 0.6;
+  height: 500px;
+  shape-outside: circle();
+  clip-path: circle();
+  background: transparent linear-gradient(180deg, #0AD8AF 0%, #0B3129 100%) 0% 0% no-repeat padding-box;
+  z-index: -1;
+  width: 32%;
+  right: 0rem;
+  margin: 0;
+
+}
+
+/*contater*/
+.contacter{
+  background:url("../img/gardencontact.png") center/cover fixed
+}
+.contacter form {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+}
+.contacter input {
+  color: teal;
+  padding: 2% 8%;
+  margin: 6% 7% 0 0;
+  border-radius: 66px;
+}
+.contacter input::placeholder{
+  padding-left:0rem;
+  margin: 0;
+  
+}
+.contacter textarea::placeholder{
+  padding:0;
+}
+.contacter textarea {
+  border-radius: 20px;
+  color: teal;
+  width: 466px;
+  height: 0;
+  margin: 5% 0;
+  padding: 8%;
+}
+input[type="submit"] {
+  margin: 0 0 0 66%;
+  color: #FFFFFF;
+}
+
+footer{
+  position: relative;
+  padding: 5% 0;
+  
+}
+footer nav + a:last-child {
+  font-size: 4.5rem;
+}
+footer > a {
+  margin-left: 4.6%;
+  width: 20%;
+  text-align: center;
+}
+
+footer address {
+  width: 36%;
+  margin: 4% 0 0 0;
+}
+
+footer address p {
+  text-align: left;
+  padding-left: 9rem;
+}
+footer address p:last-child {
+  margin-top: 6%;
+}
+footer nav {
+  width: 25%;
+  top: 50%;
+  left: 50rem;
+  position: absolute;
+}
+footer nav + a:last-child {
+  top: 6%;
+  position: absolute;
+  margin: 0;
+  right: 50rem;
+}
+.logoBlanc {
+	-webkit-filter: grayscale(100%) brightness(0) invert(1); /* Pour les navigateurs Chrome, Safari, Opera */
+	filter: grayscale(100%) brightness(0) invert(1); /* Firefox */
+}
+.colorWhite a{
+  color: white;
+}
+
+}
+
+
+
+
+
+/*JS*/
+
+.fixed{
+  position: fixed;
+  width: 100%;
+  margin-left: 2%;
+}
+
+
+

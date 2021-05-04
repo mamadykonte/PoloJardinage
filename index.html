@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardinage</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&display=swap" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c40b92b5b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+     <header>
+         
+     
+         
+         
+         <nav class="menu">
+          <a href="index.html" class="logo"><img src="img/Logo.svg" alt="leaf"></a>
+          <a href="#menu" id="toggle"><span></span></a>
+          <div class="lien">
+           <a href="#societe">La société</a>
+           <a href="#service">Nos services</a>
+           <a href="#realisation">Nos réalisations</a>
+           <a href="#contacter">Contact</a>
+          </div>
+         </nav>
+
+         <section class="banniere">
+            <h1>Polo Jardinage</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et facere accusantium dolore ea sequi rem in libero !</p>
+            <a href="#">Contactez-nous</a>
+            <a href="#contacter"><i class="fas fa-angle-double-down"></i></a>
+        </section>
+
+     </header>
+
+     <main>
+         <section class="societe" id="societe">
+            <h2>La société </h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sapiente dolore doloremque nulla at nostrum nihil, nesciunt perspiciatis consectetur veritatis soluta tenetur fugit similique illum accusamus magni officiis deserunt incidunt!
+            Ab, repellat. Ipsum magnam reiciendis natus officia ea labore ducimus exercitationem perspiciatis voluptatibus aspernatur iusto, numquam vero sint cumque expedita, commodi necessitatibus. Error culpa totam officia nemo nam velit ab.</p>
+         <div id="round"></div>
+        </section>
+
+         <section class="service" id="service">
+             <h2>Nos services</h2>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, laudantium eius officia aperiam impedit animi odit explicabo, fugit maxime facere necessitatibus atque id consequuntur quae possimus. Quibusdam nostrum ab cumque.um! Quod unde quibusdam accusamus doloribus porro rerum delectus quidem harum! Asperiores, veritatis laboriosam.</p>
+             <p>Elagage Abattage Jardinage Taille Entretien</p>
+         </section>
+
+         <section class="realisation" id="realisation">
+             <h2>Nos réalisations</h2>
+             <div class="slider">
+
+                <div class="project-toolbar">
+                  <button id="play-pause" class="btn" title="Démarrer le diaporama"><i class="fa fa-play" aria-hidden="true"></i></button>
+                  <button id="random" class="btn" title="Image aléatoire"><i class="fa fa-random" aria-hidden="true"></i></button>
+                </div>
+        
+                <div class="slider-layout">
+                  <figure class="slider-figure active">
+                    <img class="slider-picture" src="img/garden1.png" alt="garden">
+                    <figcaption class="slider-legend">Garden</figcaption>
+                  </figure>
+                  <figure class="slider-figure">
+                    <img class="slider-picture" src="img/garden_palm.png" alt="garden palm">
+                    <figcaption class="slider-legend">Garden palm</figcaption>
+                  </figure>
+                  <figure class="slider-figure">
+                    <img class="slider-picture" src="img/garden_violet.png" alt="garden violet">
+                    <figcaption class="slider-legend">Garden violet</figcaption>
+                  </figure>
+                  
+                  <div class="slider-navigation">
+                    <a href="#"
+                      rel="prev"
+                      id="prev"
+                      class="prev"
+                      title="Image précédente">
+                      <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </a>
+                    <a href="#"
+                      rel="next"
+                      id="next"
+                      class="next"
+                      title="Image suivante">
+                      <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+        
+                  <!--puces -->
+                  <ol id="slider-dots" class="slider-dots"></ol>
+                </div>
+        
+              </div>
+         </section>
+
+         <section class="contacter" id="contacter" >
+             <h2>Contactez-nous</h2>
+             <form method="post" action="index.php">
+                 <input type="text" name="nom" id="nom" placeholder="Nom">
+                 <input type="text" name="prenom" id="prenom" placeholder="Prenom">
+                 <input type="email" name="email" id="email" placeholder="Email">
+                 <textarea name="message" id="message" placeholder="Votre message..."></textarea>
+                 <input type="submit" name="valider" id="valdier" value="Valider">
+             </form>
+         </section>
+     </main>
+
+     <footer>
+        <a href="index.html"><h1>Polo Jardinage</h1><img src="img/Logo.svg" alt="leaf"></a>
+
+        <address>
+            <p>Adresse ligne 1</p>
+            <p>Adresse ligne 2</p>
+            <p>Adresse ligne 3</p>
+            <p>Téléphone <a href="tel:+330000000">+330000000</a></p> 
+        </address>
+        <nav>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-pinterest-square"></i></a>
+        </nav>
+        <a href="#"><i class="fas fa-angle-double-up"></i></a>
+     </footer>
+
+     <script src="js/index.js"></script>
+     <script src="js/main.js"></script>
+     <script src="js/utilities.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+</body>
+</html>
